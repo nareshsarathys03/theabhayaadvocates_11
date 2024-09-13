@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us - The Abhaya Advocates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ed254e;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        p {
+            color: #465362;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .form-group {
+            flex: 1;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            color: #011936;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #465362;
+            border-radius: 4px;
+            color: #011936;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ed254e;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .btn {
+            background-color: #ed254e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #d12042;
+        }
+
+        .address-section {
+            margin-top: 50px;
+        }
+
+        .address {
+            font-size: 18px;
+            color: #011936;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 400px;
+            border: 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form action="your-backend-url-here" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group" style="flex-basis: 100%;">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group" style="flex-basis: 100%; text-align: center;">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+
+        <div class="address-section">
+            <div class="address">
+                <strong>THE ABHAYA ADVOCATES</strong><br>
+                72, NETHRA NAGAR, TEX PARK ROAD, VIZAG - 530017<br>
+                Phone: +91-7010600266 / +91-9704668554<br>
+                Email: abhayaadvocates@gmail.com
+            </div>
+
+            <!-- Embed Google Maps -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434624029!2d144.9631577155897!3d-37.81410717975154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773b8b2f7d14f5!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sin!4v1648120319815!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
