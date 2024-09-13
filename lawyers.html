@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RightConnect - Lawyer Profiles</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+    }
+    .navbar {
+      background-color: #011936;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin: 0 15px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px;
+    }
+    .profile-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .profile-card:hover {
+      transform: scale(1.05);
+    }
+    .profile-photo {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .profile-content {
+      padding: 20px;
+      text-align: center;
+    }
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #011936;
+      margin: 10px 0;
+    }
+    .profile-specialization {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #465362;
+    }
+    .footer {
+      background-color: #011936;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">RightConnect</div>
+    <ul class="nav-links">
+      <li><a href="welcomepage.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Grid Section -->
+  <section class="profile-grid">
+    <div class="profile-card" onclick="window.location.href='lawyer1.html'">
+      <img src="woman3.png" alt="Lawyer 1" class="profile-photo">
+      <div class="profile-content">
+        <h3 class="profile-name">Aditi Sharma</h3>
+        <p class="profile-specialization">Family Law, Divorce Cases</p>
+      </div>
+    </div>
+    
+    <div class="profile-card" onclick="window.location.href='lawyer2.html'">
+      <img src="https://st4.depositphotos.com/13187390/26944/i/450/depositphotos_269449576-stock-photo-young-indian-asian-businessman-suit.jpg" alt="Lawyer 2" class="profile-photo">
+      <div class="profile-content">
+        <h3 class="profile-name">Vikram Singh</h3>
+        <p class="profile-specialization">Criminal Law, Women's Rights</p>
+      </div>
+    </div>
+    
+    <div class="profile-card" onclick="window.location.href='lawyer3.html'">
+      <img src="woman2.png" alt="Lawyer 3" class="profile-photo">
+      <div class="profile-content">
+        <h3 class="profile-name">Sneha Rao</h3>
+        <p class="profile-specialization">Human Rights, Advocacy</p>
+      </div>
+    </div>
+    
+    <div class="profile-card" onclick="window.location.href='lawyer4.html'">
+      <img src="https://miro.medium.com/v2/resize:fit:320/0*e1ck6_6iwVXb3Ldc.jpg" alt="Lawyer 4" class="profile-photo">
+      <div class="profile-content">
+        <h3 class="profile-name">Anil Deshmukh</h3>
+        <p class="profile-specialization">Property Disputes, Civil Law</p>
+      </div>
+    </div>
+
+    <div class="profile-card" onclick="window.location.href='lawyer5.html'">
+      <img src="woman1.png" alt="Lawyer 5" class="profile-photo">
+      <div class="profile-content">
+        <h3 class="profile-name">Neha Patel</h3>
+        <p class="profile-specialization">Employment Law, Workplace Discrimination</p>
+      </div>
+    </div>
+
+    <div class="profile-card" onclick="window.location.href='lawyer6.html'">
+      <img src="https://indiasourcing.net/wp-content/uploads/2021/03/Picture-300x300.jpeg" alt="Lawyer 6" class="profile-photo">
+      <div class="profile-content">
+        <h3 class="profile-name">Ravi Kapoor</h3>
+        <p class="profile-specialization">Immigration Law, Asylum Cases</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 RightConnect. All rights reserved.</p>
+    <ul>
+      <li><a href="privacypolicy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
