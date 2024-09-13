@@ -1,8 +1,4 @@
-// Smooth scroll functionality for the 'Get Started' button
+// Navigate to services.html when the 'Get Started' button is clicked
 document.querySelector('.get-started').addEventListener('click', function () {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth'
-    });
-  });
-  
+    window.location.href = 'services.html';
+});
