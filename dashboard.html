@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Aid Dashboard - RightConnect</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">RightConnect</div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="mycases.html">My Cases</a></li>
+      <li><a href="dashboard.html">Alerts</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="welcomepage.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard Heading -->
+  <header class="dashboard-header">
+    <h1>Your Legal Aid Dashboard</h1>
+  </header>
+
+  <!-- My Cases Section -->
+  <section class="my-cases">
+    <h2>My Cases</h2>
+    <div class="case-item">
+      <h3>Case #000025 - Status: In Progress</h3>
+      <p>Support Request: Domestic Violence at Work Place</p>
+    </div>
+    <div class="case-item">
+      <h3>Case #000068 - Status: Resolved</h3>
+      <p>Support Request: Advice on Sexual Harrasment on Women at Work Place</p>
+    </div>
+  </section>
+
+  <!-- Real-Time Alerts Section -->
+  <section class="real-time-alerts">
+    <h2>Real-Time Alerts</h2>
+    <ul>
+      <li>Case #000025: Upcoming hearing on Sep 15, 2024</li>
+      <li>New Legal Update: Women's Property Rights in 2024</li>
+      <li>Case #000068: Feedback Required for Closure<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSdXzXKiaBGTNaxyeEA_uJBYZkT5l_4tkbdnJE9QiQyRX6FXlA/viewform?usp=sf_link">Click Here to Give Feedback</a></li>
+    </ul>
+  </section>
+
+  <!-- Notification Preferences Section -->
+  <section class="notifications">
+    <h2>Customize Notifications</h2>
+    <form id="notification-form">
+      <label>
+        <input type="checkbox" name="case-updates" checked>
+        Case Progress Updates
+      </label><br>
+      <label>
+        <input type="checkbox" name="rights-info">
+        New Rights Information
+      </label><br>
+      <label>
+        <input type="checkbox" name="law-updates">
+        Law Updates
+      </label><br>
+      <button type="submit">Save Preferences</button>
+    </form>
+  </section>
+
+  <!-- Profile Settings Section -->
+  <section class="profile-settings">
+    <h2>Profile Settings</h2>
+    <form id="profile-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Dedeepya Kanuri"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="dedeepyakanuri@gmail.com"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="********"><br>
+
+      <button type="submit">Update Profile</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 RightConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
