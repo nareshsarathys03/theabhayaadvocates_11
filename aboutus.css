@@ -1,0 +1,91 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #F5F5F5;
+    color: #011936;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #011936;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ED254E;
+  }
+  
+  /* Main Content */
+  .main-content {
+    padding: 40px;
+  }
+  
+  .intro {
+    background-color: #ED254E;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+  
+  .mission-vision, .rightconnect, .problem-opportunity, .commitment {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .mission-vision h2, .rightconnect h2, .problem-opportunity h2, .commitment h2 {
+    color: #ED254E;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .commitment p {
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #011936;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
